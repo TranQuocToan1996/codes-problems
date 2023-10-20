@@ -1,5 +1,7 @@
 package graycode
 
+import "math"
+
 func grayCodeUtil(res *[]int, n int, num []int) {
 	if n == 0 {
 		*res = append(*res, num[0])
@@ -17,7 +19,7 @@ func grayCodeUtil(res *[]int, n int, num []int) {
 }
 
 func grayCode(n int) []int {
-	res := []int{}
+	res := make([]int, 0, int(math.Pow(2, float64(n))))
 
 	num := []int{0}
 	grayCodeUtil(&res, n, num)
