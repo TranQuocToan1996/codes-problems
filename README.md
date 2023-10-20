@@ -1,2 +1,3 @@
 # codes-problems
-Problems solving from elotus
+Problems solving.
+Tran Quoc Toan.
