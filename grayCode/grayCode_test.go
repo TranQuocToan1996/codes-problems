@@ -14,6 +14,7 @@ type GrayCodeTestCase struct {
 }
 
 func TestGrayCode(t *testing.T) {
+	defer utils.MemoryAlloc()
 	defer utils.LogRuntime(time.Now())
 	tests := []GrayCodeTestCase{
 		{
